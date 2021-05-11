@@ -6,6 +6,12 @@ import datetime
 import os
 import pandas as pd
 
+if os.path.exists('vacina.csv'):
+	pass
+else:
+	f = open("vacina.csv", "x")
+	f.close()
+
 
 def Recupera():
 	with open("vacina.csv") as arquivo:
